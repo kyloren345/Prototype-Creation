@@ -1,295 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Prototype Development</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="creators.html">Creators</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">What We Will Acheive</h1>
-                            <p class="lead text-white-50 mb-4">The end goal of our project is to create a sustainable source for transport that will be very quick and very eco-friendly to help the Earth. If you order just to mention it will not be a thing until its release because currently it is a simulation</p>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
-            <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">What are the features of our Prototype</h2>
-                        <p>Our Prototype features multiple safety features that are subjective to not only our design but also inspiration from; Tesla, Airbus x Audi, Formula 1, and also Mercedes, and MagLev we implemented Autopilot and Enhanced Autopilot, helicopter carriages, finding the nearest parking place for the helicopter and the carriages are taken by a train with the same implementations from MagLev. Also there is a huge luggage compartment at the front of the bullet train like nose.</p>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                        <h2 class="h4 fw-bolder">What it's purpose is</h2>
-                        <p>The purpose of our Prototype is to take you anywhere quickly and also to do it safely. How we do this you ask? Well we implemented AI that you programme yourself, now don't worry you don't need any computing knowledge all you have to do is tell the AI by typing on the keyboard to find the nearest helicopter. The process is simple all you do is get into your own personal carriage that is like a train capsule but YOU are the one who controls it, just get in and type your nearest destination to get picked up by a helicopter module and wait for the arrival. Then your train section will get separated from the carriage section and you will be able to lift off and head to your destination same thing just type in where you want to go and your module will take you there. As for your train carriage that took you there well we have incoporated similar technology to Tesla's Autopilot and it will find the nearest parking area like the Mercedes future car will do. There is also the feature of the rail connecting to your house to make availability to summon, and there will be more features.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h4 fw-bolder">Options</h2>
-                        <p>When our Prototype fully releases we will have 3 different options to choose from however right now you can choose one of these options and Reserve your own, we will be launching what we call the Transrapid L0 early 2024 so scroll down an chooes which option suits your style and compatibility with your workflow.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                <h2 class="h4 fw-bolder">Options Futher Explanation</h2>
-                <p>The Super Network allows access to the fastest monorail network out there. The media allows carplay features that allow you to play your favourite music while sitting back and enjoying the ride in your helicopter module. Also the Saftey is an ANCAP 5 star rating for the Transrapid L0 because it is also a train like vehicle so we tested it with ANCAP. There is also a manual control in an emergency.</p>
-                </a>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Prototype Development</title>
+    <!--Node JS Script-->
+    <link rel="script" href="js/node.js">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="creators.html">Creators</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-        </section>
-        <!-- Pricing section-->
-        <section class="bg-light py-5 border-bottom">
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Transrapid L0 Style</h2>
-                    <p class="lead mb-0">Choose your Workflow needs</p>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <!-- Pricing card free-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-primary">Transrapid L0 GAMMA Pack</div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$120,000</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Autopilot</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        GAMMA Version of AI Intelligency
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        App Compatibility
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Autopark
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Summon
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Media
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Enhanced Autopilot
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Solar Panel Implementation
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Super Network Features
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="gamma.html">Choose Style</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pricing card pro-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-primary">
-                                    Transrapid L0 BETA
-                                </div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$130,000</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Autopilot</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        BETA Version of AI Intelligency
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        App Compatibility
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Autopark BETA (includes more parking areas in Boring Tunnels)
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Summon
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Media
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Enhanced Autopilot
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Solar Panel Implementation
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Super Network Features
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="beta.html">Choose plan</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pricing card enterprise-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card">
-                            <div class="card-body p-5">
-                                <div class="bi bi-star-fill small text-uppercase fw-bold text-primary">Transrapid L0 Alpha</div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$135,000</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Autopilot ALPHA (even more safety features and customizability to your Workflow )</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        App Compatibility
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Autopark ALPHA (same as BETA with Boring Tunnel Valet Parking free of charge)
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Summon
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Media
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Enhanced Autopilot
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                       Solar Panel Implementation
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Super Network Features
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="alpha.html">Choose plan</a></div>
-                            </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder text-white mb-2">What We Will Acheive</h1>
+                        <p class="lead text-white-50 mb-4">The end goal of our project is to create a sustainable source
+                            for transport that will be very quick and very eco-friendly to help the Earth. If you order
+                            just to mention it will not be a thing until its release because currently it is a
+                            simulation</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact section-->
-        <section class="bg-light py-5">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                    <h2 class="fw-bolder">Get in touch</h2>
-                    <p class="lead mb-0">We'd love to hear from you</p>
+        </div>
+    </header>
+    <!-- Features section-->
+    <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                            class="bi bi-collection"></i></div>
+                    <h2 class="h4 fw-bolder">What are the features of our Prototype</h2>
+                    <p>Our Prototype features multiple safety features that are subjective to not only our design but
+                        also inspiration from; Tesla, Airbus x Audi, Formula 1, and also Mercedes, and MagLev we
+                        implemented Autopilot and Enhanced Autopilot, helicopter carriages, finding the nearest parking
+                        place for the helicopter and the carriages are taken by a train with the same implementations
+                        from MagLev. Also there is a huge luggage compartment at the front of the bullet train like
+                        nose.</p>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">What it's purpose is</h2>
+                    <p>The purpose of our Prototype is to take you anywhere quickly and also to do it safely. How we do
+                        this you ask? Well we implemented AI that you programme yourself, now don't worry you don't need
+                        any computing knowledge all you have to do is tell the AI by typing on the keyboard to find the
+                        nearest helicopter. The process is simple all you do is get into your own personal carriage that
+                        is like a train capsule but YOU are the one who controls it, just get in and type your nearest
+                        destination to get picked up by a helicopter module and wait for the arrival. Then your train
+                        section will get separated from the carriage section and you will be able to lift off and head
+                        to your destination same thing just type in where you want to go and your module will take you
+                        there. As for your train carriage that took you there well we have incoporated similar
+                        technology to Tesla's Autopilot and it will find the nearest parking area like the Mercedes
+                        future car will do. There is also the feature of the rail connecting to your house to make
+                        availability to summon, and there will be more features.</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder">Options</h2>
+                    <p>When our Prototype fully releases we will have 3 different options to choose from however right
+                        now you can choose one of these options and Reserve your own, we will be launching what we call
+                        the Transrapid L0 early 2024 so scroll down an chooes which option suits your style and
+                        compatibility with your workflow.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+            <h2 class="h4 fw-bolder">Options Futher Explanation</h2>
+            <p>The Super Network allows access to the fastest monorail network out there. The media allows carplay
+                features that allow you to play your favourite music while sitting back and enjoying the ride in your
+                helicopter module. Also the Saftey is an ANCAP 5 star rating for the Transrapid L0 because it is also a
+                train like vehicle so we tested it with ANCAP. There is also a manual control in an emergency.</p>
+            </a>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Pricing section-->
+    <section class="bg-light py-5 border-bottom">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Transrapid L0 Style</h2>
+                <p class="lead mb-0">Choose your Workflow needs</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <!-- Pricing card free-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card mb-5 mb-xl-0">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold text-primary">Transrapid L0 GAMMA Pack</div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">$120,000</span>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    <strong>Autopilot</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    GAMMA Version of AI Intelligency
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    App Compatibility
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Autopark
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Summon
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Media
+                                </li>
+                                <li class="mb-2 text-muted">
+                                    <i class="bi bi-x"></i>
+                                    Enhanced Autopilot
+                                </li>
+                                <li class="mb-2 text-muted">
+                                    <i class="bi bi-x"></i>
+                                    Solar Panel Implementation
+                                </li>
+                                <li class="text-muted">
+                                    <i class="bi bi-x"></i>
+                                    Super Network Features
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-primary" href="gamma.html">Choose Style</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing card pro-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card mb-5 mb-xl-0">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold text-primary">
+                                Transrapid L0 BETA
                             </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">$130,000</span>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, go to
-                                    <br />
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0KY18rqkRztZyoFSIi1EYDpLYjd3eAra75q8nYacqS4rBZg/viewform?usp=sf_link">https://docs.google.com/forms/d/e/1FAIpQLSd0KY18rqkRztZyoFSIi1EYDpLYjd3eAra75q8nYacqS4rBZg/viewform?usp=sf_link</a>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    <strong>Autopilot</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    BETA Version of AI Intelligency
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    App Compatibility
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Autopark BETA (includes more parking areas in Boring Tunnels)
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Summon
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Media
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Enhanced Autopilot
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Solar Panel Implementation
+                                </li>
+                                <li class="text-muted">
+                                    <i class="bi bi-x"></i>
+                                    Super Network Features
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-primary" href="beta.html">Choose plan</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing card enterprise-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-body p-5">
+                            <div class="bi bi-star-fill small text-uppercase fw-bold text-primary">Transrapid L0 Alpha
+                            </div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">$135,000</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    <strong>Autopilot ALPHA (even more safety features and customizability to your
+                                        Workflow )</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    App Compatibility
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Autopark ALPHA (same as BETA with Boring Tunnel Valet Parking free of charge)
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Summon
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Media
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Enhanced Autopilot
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Solar Panel Implementation
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check text-primary"></i>
+                                    Super Network Features
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-primary" href="alpha.html">Choose plan</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="bg-light py-5">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
+                </div>
+                <h2 class="fw-bolder">Learn More From Us</h2>
+                <p class="lead mb-0">Be free to ask any questions about anything that we might have left out</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                  
+           
+                    <form class="row g-3 needs-validation" novalidate
+                        action="https://prototype-emailer-test.herokuapp.com" method="post">
+                        <div class="form-floating mb-3">
+                            <label for="Name"></label>
+                            <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="Full Name" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+
+                        <div class="form-floating mb-3">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+
+                                <input type="text" class="form-control" id="email" name="email"
+                                    aria-describedby="inputGroupPrepend" placeholder="Email Address" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" id="message" name="message" class="form-control" id="validationCustom03" placeholder="Message" required>
+                              <div class="invalid-feedback">
+                                Please provide a message.
+                              </div>
+                        </div>
+                           
+                          
+                           
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                          </form>
                     </div>
                 </div>
             </div>
@@ -306,6 +332,26 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+        <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()</script>
     </body>
 </html>

@@ -4,4 +4,4 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
 */
 // This file is intentionally blank
-// Use this file to add JavaScript to your project
+//x Use this file to add JavaScript to your project
