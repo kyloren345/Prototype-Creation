@@ -283,7 +283,7 @@
                 <div class="col-lg-6">
                   
            
-                    <form class="row g-3 needs-validation" novalidate
+                    <!-- <form class="row g-3 needs-validation" novalidate
                         action="https://prototype-emailer-test.herokuapp.com" method="post">
                         <div class="form-floating mb-3">
                             <label for="Name"></label>
@@ -304,7 +304,11 @@
                             </div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" id="message" name="message" class="form-control" id="validationCustom03" placeholder="Message" required>
+                            <label for="validationCustomUsername" class="form-label">Message</label>
+                            <div class="input-group has-validation">
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="message" name="message" id="validationCustom03" aria-describedby="inputGroupPrepend" placeholder="Message" required>
                               <div class="invalid-feedback">
                                 Please provide a message.
                               </div>
@@ -314,7 +318,58 @@
                            
                             <div class="col-12">
                               <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div> -->
+                             <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" action="https://prototype-emailer-test.herokuapp.com" method="post">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <!-- <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div> -->
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-lg enabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
                           </form>
                     </div>
                 </div>
